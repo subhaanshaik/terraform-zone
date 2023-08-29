@@ -16,6 +16,17 @@ variable "subnet_names" {
   description = "these are the subnet names"
 }
 
+
+variable "subnet_azs" {
+  type        = list(string)
+  description = "these are azs"
+}
+
+variable "db_subnet_names" {
+  type        = list(string)
+  description = "these are database subnet names"
+}
+
 variable "subnet_count" {
   type    = number
   default = 6
